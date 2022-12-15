@@ -2,7 +2,7 @@
 
 // >>>> function declarations <<<<<<<<<
 
-// >>>> fetching from the database <<<<<<<<<
+// >>>> fetching from the database <<<<<<<<
 function getAllBeers(){
   fetch('http://localhost:3000/beers')
   .then(resp=>resp.json())

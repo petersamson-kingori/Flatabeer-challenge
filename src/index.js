@@ -4,7 +4,7 @@
 
 // >>>> fetching from the database <<<<<<<<
 function getAllBeers(){
-  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge')
+  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge/beers')
   .then(resp=>resp.json())
   .then(beers=>{
       console.log(beers)
@@ -13,7 +13,7 @@ function getAllBeers(){
 }
 // >>>> Display Names <<<<<<<<<
 function getBeerName (){
-  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge')
+  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge/beers')
   .then(resp=>resp.json())
   .then(beers=>{
     let beerName = document.getElementById("beer-name");
@@ -24,7 +24,7 @@ function getBeerName (){
 
 // >>>> Display img <<<<<<<<<
 function getbeerImage (image_url){
-  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge')
+  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge/beers')
   .then(resp=>resp.json())
   .then(beers=>{
     let img = document.getElementById("beer-image")
@@ -36,7 +36,7 @@ function getbeerImage (image_url){
 
 // >>>> Display Description <<<<<<<<<
 function getBeerDescription (){
-  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge')
+  fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge/beers')
   .then(resp=>resp.json())
   .then(beers=>{
     beerDescription = document.querySelector("#beer-description");
@@ -49,7 +49,7 @@ function getBeerDescription (){
 
   // >>>> Display Reviews <<<<<<<<<
   function getBeerReviews (){
-    fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge')
+    fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge/beers')
     .then(resp=>resp.json())
     .then(beers=>{
       let list = document.getElementById("review-list");
@@ -62,7 +62,7 @@ function getBeerDescription (){
 
   // >>>> Display Beer Menu <<<<<<<<<
   function getBeerMenu (){
-    fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge')
+    fetch('https://my-json-server.typicode.com/petersamson-kingori/Flatabeer-challenge/beers')
     .then(resp=>resp.json())
     .then(beers=>{
       beerNames = beers.map((beer) => beer.name)
